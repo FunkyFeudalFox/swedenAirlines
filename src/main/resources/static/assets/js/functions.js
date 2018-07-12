@@ -167,36 +167,16 @@ function submitDelete(id, api){
 
 function navbarHighlight(path){
    switch(path) {
-       case "/tables":
-         $("#navTables").addClass("active");
+       case "/airports":
+         $("#navAirports").addClass("active");
            break;
 
-       case "/guests":
-           $("#navGuests").addClass("active");
+       case "/airplanes":
+           $("#navAirplanes").addClass("active");
            break;
 
-       case "/bookings":
-           $("#navBookings").addClass("active");
-           break;
-
-       case "/mainMenu":
-           $("#navEmployee").addClass("active");
-           break;
-
-       case "/addBooking":
-           $("#navAddBooking").addClass("active");
-           break;
-
-       case "/contact":
-           $("#navContact").addClass("active");
-           break;
-
-       case "/":
-           $("#navGuestHome").addClass("active");
-           break;
-
-       default:
-           $("#navHome").addClass("active");
+           default:
+           $("#navAirports").addClass("active");
            break;
    }
 }
